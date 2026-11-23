@@ -1,8 +1,8 @@
 # Лабораторная работа №3. Кластеризация
 
-Отчёт — ноутбук [`lab3.ipynb`](lab3.ipynb) (выполнен, все графики и таблицы сохранены в нём).
+Отчёт – ноутбук [`lab3.ipynb`](lab3.ipynb) (выполнен, все графики и таблицы сохранены в нём).
 
-Датасет: [Credit Risk Benchmark Dataset](https://www.kaggle.com/datasets/adilshamim8/credit-risk-benchmark-dataset) — `data/credit_risk.csv`.
+Датасет: [Credit Risk Benchmark Dataset](https://www.kaggle.com/datasets/adilshamim8/credit-risk-benchmark-dataset) – `data/credit_risk.csv`.
 Класс `dlq_2yrs` в обучении не участвует и используется только для внешних метрик.
 
 ## Состав

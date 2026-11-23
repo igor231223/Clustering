@@ -275,7 +275,7 @@ md("scaler_desc")
 md("tendency")
 code(r'''
 def hopkins(A, m=None, seed=SEED):
-    """Статистика Хопкинса: ~0.5 — равномерные данные, -> 1 — выраженная кластерная структура."""
+    """Статистика Хопкинса: ~0.5 – равномерные данные, -> 1 – выраженная кластерная структура."""
     rng = np.random.default_rng(seed)
     n, d = A.shape
     m = m or int(0.05 * n)
@@ -428,7 +428,7 @@ K = 3
 km = KMeans(n_clusters=K, n_init=10, random_state=SEED).fit(Z)
 hc = AgglomerativeClustering(n_clusters=K, linkage="ward").fit(Z)
 
-# Перенумеруем кластеры по возрастанию доли просрочек — чтобы номера в обоих методах были сопоставимы
+# Перенумеруем кластеры по возрастанию доли просрочек – чтобы номера в обоих методах были сопоставимы
 def relabel_by_risk(labels):
     order = pd.Series(y).groupby(labels).mean().sort_values().index
     mapping = {old: new for new, old in enumerate(order)}
