@@ -230,7 +230,7 @@ Z = scaler.fit_transform(X_t)
 Zdf = pd.DataFrame(Z, columns=FEATURES)
 
 skew_cmp = pd.DataFrame({
-    "асимметрия исходн.": X_raw.skew(),
+    "асимметрия (после удаления аномалий)": X_raw.skew(),
     "после винзоризации": X_w.skew(),
     "после log1p": X_t.skew(),
     "среднее после Z": Zdf.mean().round(6).values,
